@@ -65,7 +65,7 @@ main {
 }
 
 #email {
-    margin-top: 5px;
+    margin-top: 10px;
     align-items: center;
 }
 
@@ -86,6 +86,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     margin: auto;
+
 }
 
 #entrar {
@@ -109,12 +110,14 @@ main {
     padding: 12px;
     justify-content: center;
     border-radius: 10px;
+    height: 40px;
 
 }
 
 .link-botao > i {
     font-size: 0.8em;
     padding:6px 0px 0px 3px ;
+    
 
 }
 
@@ -128,6 +131,9 @@ a:hover,.material-symbols-outlined:hover {
 }
 
 @media screen and (min-width: 768px) {
+
+
+
     #login {
         width: 80vw;
         height: 70vh;
@@ -146,23 +152,31 @@ a:hover,.material-symbols-outlined:hover {
     }
 
     #formulario h1 {
-        font-size: 2.3em;
+        font-size: 3em;
         margin-top: 10px;
 
     }
 
     #formulario p {
-        font-size: 1.1em;
+        font-size: 1.5em;
         text-align: center;
         margin-bottom: 10px;
+        width: 330px;
     }
 
     .campo {
         padding: 7px;
+        height: 80px;
     }
 
     .iemail-isenha {
         padding: 15px;
+        height: 60px;
+        width: 250px;
+    }
+
+    .iemail-isenha::placeholder {
+        font-size: 1.3em;
     }
 
     .svgs {
@@ -171,10 +185,31 @@ a:hover,.material-symbols-outlined:hover {
     }
 
     #entrar {
-        height: 53px;
+        height: 60px;
+        font-size: 1.3em;
+        cursor: pointer;
     }
 
+    .link-botao {
+        height: 60px;
+        font-size: 1.3em;
+    }
 }
 
+@media screen and (min-width: 992px) {
+    #login {
+        display: flex;
+        flex-direction: row-reverse ;
+        
+    }
+}
 
+@media screen and (min-width: 1921px) {
+    form {
+        width: 500px;
+    }
 
+    .iemail-isenha {
+        width: 90%;
+    }
+}
